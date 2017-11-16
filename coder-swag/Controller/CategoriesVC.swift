@@ -10,12 +10,12 @@ import UIKit
 
 class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var CategoryTable: UITableView!
+    @IBOutlet weak var categoryTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CategoryTable.dataSource = self
-        CategoryTable.delegate = self
+        categoryTable.dataSource = self
+        categoryTable.delegate = self
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,6 +34,26 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            
+            //Get rid of text next to back button
+            let barBtn = UIBarButtonItem()
+            barBtn.title = `""
+            navigationItem.backBarButtonItem = barBtn
+            
+            
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+            
+            
+        }
+    }
     
 }
 
