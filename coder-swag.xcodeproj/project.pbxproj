@@ -13,6 +13,8 @@
 		14471F041FBD198500DC8210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14471F031FBD198500DC8210 /* Assets.xcassets */; };
 		14471F071FBD198500DC8210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14471F051FBD198500DC8210 /* LaunchScreen.storyboard */; };
 		14471F121FBD1E6000DC8210 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14471F111FBD1E6000DC8210 /* CategoryCell.swift */; };
+		14471F151FBD208B00DC8210 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14471F141FBD208B00DC8210 /* Category.swift */; };
+		14471F181FBD222800DC8210 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14471F171FBD222800DC8210 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		14471F061FBD198500DC8210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14471F081FBD198500DC8210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14471F111FBD1E6000DC8210 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		14471F141FBD208B00DC8210 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		14471F171FBD222800DC8210 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		14471EFB1FBD198500DC8210 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				14471F161FBD221800DC8210 /* Services */,
 				14471F101FBD1DF200DC8210 /* View */,
 				14471F0F1FBD1DEC00DC8210 /* Model */,
 				14471F0E1FBD1DE600DC8210 /* Controller */,
@@ -79,6 +84,7 @@
 		14471F0F1FBD1DEC00DC8210 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				14471F141FBD208B00DC8210 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				14471F111FBD1E6000DC8210 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		14471F161FBD221800DC8210 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14471F171FBD222800DC8210 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,8 @@
 				14471EFF1FBD198500DC8210 /* CategoriesVC.swift in Sources */,
 				14471EFD1FBD198500DC8210 /* AppDelegate.swift in Sources */,
 				14471F121FBD1E6000DC8210 /* CategoryCell.swift in Sources */,
+				14471F151FBD208B00DC8210 /* Category.swift in Sources */,
+				14471F181FBD222800DC8210 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
