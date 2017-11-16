@@ -30,43 +30,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-xC-gU9">
-                                <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="160" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-xC-gU9">
+                                <rect key="frame" x="0.0" y="70" width="375" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Category Cell" rowHeight="165" id="BkS-qn-7Yd" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="160" id="HJi-ho-jSQ" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BkS-qn-7Yd" id="1rx-9G-rsr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HJi-ho-jSQ" id="82t-P7-pv2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="cHi-zS-FzV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-eu-Qun">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="153.5"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksm-kB-gHi">
-                                                    <rect key="frame" x="103" y="59.5" width="169" height="46"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvt-TW-32Y">
+                                                    <rect key="frame" x="109" y="56.5" width="156" height="46.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="169" id="Bl9-td-VWh"/>
-                                                        <constraint firstAttribute="height" constant="46" id="Ypi-NX-AmI"/>
+                                                        <constraint firstAttribute="height" constant="46" id="FUe-hs-f0y"/>
+                                                        <constraint firstAttribute="width" constant="156" id="kUl-YO-BXU"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="cHi-zS-FzV" secondAttribute="trailing" id="NUm-mN-8Ff"/>
-                                                <constraint firstItem="ksm-kB-gHi" firstAttribute="centerY" secondItem="1rx-9G-rsr" secondAttribute="centerY" id="Ova-w9-VlU"/>
-                                                <constraint firstAttribute="bottom" secondItem="cHi-zS-FzV" secondAttribute="bottom" id="Qv0-uB-yb0"/>
-                                                <constraint firstItem="cHi-zS-FzV" firstAttribute="top" secondItem="1rx-9G-rsr" secondAttribute="top" id="bQt-bj-PtA"/>
-                                                <constraint firstItem="ksm-kB-gHi" firstAttribute="centerX" secondItem="1rx-9G-rsr" secondAttribute="centerX" id="cSZ-pZ-Inr"/>
-                                                <constraint firstItem="cHi-zS-FzV" firstAttribute="leading" secondItem="1rx-9G-rsr" secondAttribute="leading" id="gTP-en-55o"/>
+                                                <constraint firstItem="Pvt-TW-32Y" firstAttribute="centerY" secondItem="82t-P7-pv2" secondAttribute="centerY" id="AbI-qY-uT8"/>
+                                                <constraint firstAttribute="bottom" secondItem="ffU-eu-Qun" secondAttribute="bottom" constant="3" id="BWi-5G-xtu"/>
+                                                <constraint firstItem="ffU-eu-Qun" firstAttribute="top" secondItem="82t-P7-pv2" secondAttribute="top" constant="3" id="Heh-2R-oQV"/>
+                                                <constraint firstAttribute="trailing" secondItem="ffU-eu-Qun" secondAttribute="trailing" id="Ily-2B-JeF"/>
+                                                <constraint firstItem="ffU-eu-Qun" firstAttribute="leading" secondItem="82t-P7-pv2" secondAttribute="leading" id="XPi-gj-Plk"/>
+                                                <constraint firstItem="Pvt-TW-32Y" firstAttribute="centerX" secondItem="82t-P7-pv2" secondAttribute="centerX" id="gLt-41-85e"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="cHi-zS-FzV" id="J5U-Lj-mHv"/>
-                                            <outlet property="categoryTitle" destination="ksm-kB-gHi" id="W7y-kF-MYU"/>
+                                            <outlet property="categoryImage" destination="ffU-eu-Qun" id="deM-qK-uy3"/>
+                                            <outlet property="categoryTitle" destination="Pvt-TW-32Y" id="BbS-Im-mw1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
